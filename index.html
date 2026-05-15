@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIS FROST | Premium Refreshing Snacks</title>
+    <style>
+        /* --- Color Palette & Variables --- */
+        :root {
+            --primary-blue: #005371;
+            --pure-white: #ffffff;
+            --pure-black: #000000;
+        }
+
+        /* --- Global Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--pure-white);
+            color: var(--pure-black);
+            line-height: 1.6;
+        }
+
+        /* --- Navigation Bar --- */
+        header {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 4px solid var(--primary-blue);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: var(--pure-white);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--primary-blue);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--pure-white);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background-color: var(--pure-white);
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--pure-black);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 span {
+            color: var(--primary-blue);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            color: #333333; /* Slightly softer black for readability */
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: var(--pure-white);
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn:hover {
+            background-color: var(--pure-white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        /* --- About/Intro Section --- */
+        .about {
+            background-color: var(--primary-blue);
+            color: var(--pure-white);
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* --- Features Grid --- */
+        .features {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 60px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">EIS <span>FROST</span></a>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Crisp. Cool. <span>Craveable.</span></h1>
+        <p>Welcome to EIS FROST. We craft premium, intensely flavorful snacks designed to awaken your senses. Discover the perfect crunch for every craving.</p>
+        <a href="shop.html" class="btn">Shop Our Snacks</a>
+    </section>
+
+    <section class="about">
+        <h2>The EIS FROST Difference</h2>
+        <p>Born from a passion for bold flavors and satisfying textures, EIS FROST is redefining the snack aisle. We believe snacking shouldn't just bridge the gap between meals—it should be an experience. Using meticulously sourced ingredients and our signature flavor-locking process, we deliver snacks that are as uncompromising on quality as they are on taste.</p>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Bold Flavors</h3>
+            <p>From savory to sweet, our products are engineered to deliver a maximum flavor impact in every single bite.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Premium Ingredients</h3>
+            <p>We source only the highest quality ingredients, ensuring a clean, delicious, and guilt-free snacking experience.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Signature Crunch</h3>
+            <p>The "Frost" isn't just a name; it's our promise of a fresh, crisp, and satisfying texture you won't find anywhere else.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 EIS FROST Snacks. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
