@@ -551,6 +551,15 @@
                 return; 
             }
 
+// Grab the name from the input box. (.trim() removes accidental spaces)
+const customerName = document.getElementById('customer-name').value.trim();
+
+// Safety Check: If they left it blank, pop up an alert and stop the checkout!
+if (customerName === "") {
+    alert("Please enter your name before checking out!");
+    return;
+}
+
             // PASTE YOUR DISCORD WEBHOOK URL HERE BETWEEN THE QUOTES
             const webhookURL = "https://discord.com/api/webhooks/1504882788766322691/GH_4qPl8JucaMMeHXfvxK7Gw9hcOj99RoZ2wUVqhGPOQuevERE51vokJFWxNa4PRQKQf";
 
@@ -563,7 +572,8 @@
 
             // Build our receipt text formatted for Discord
             let orderMessage = "🚨 **NEW ORDER RECEIVED!** 🚨\n\n";
-            orderMessage += "**Items Ordered:**\n";
+orderMessage += `👤 **Customer:** ${customerName}\n\n`; // <-- This is the new line!
+orderMessage += "**Items Ordered:**\n";
             
             // Add each item to the message
             cartItems.forEach(item => {
@@ -601,6 +611,10 @@
                 // Empty the cart so they can start over
                 cartItems = [];
                 cartTotal = 0.00;
+
+document.getElementById('customer-name').value = ''; 
+
+
                 updateCartUI();
                 toggleCart();
             })
