@@ -6,7 +6,7 @@
     <title>EIS FROST | Premium Snacks</title>
     <style>
         /* CSS Styling */
-     :root {
+        :root {
             --primary-color: #000000;
             --secondary-color: #005371;
             --bg-color: #000000;
@@ -60,6 +60,7 @@
         nav a:hover {
             color: var(--secondary-color);
         }
+
         .payment-options {
             margin-bottom: 1.5rem;
             display: flex;
@@ -92,43 +93,45 @@
             cursor: pointer;
             transition: transform 0.2s;
         }
+
         .flavor-select {
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    border-radius: 8px;
-    border: 1px solid #000000;
-    font-size: 0.9rem;
-    color: #005371;
-    outline: none;
-    width: 100%;
-    cursor: pointer;
-}
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            border-radius: 8px;
+            border: 1px solid #000000;
+            font-size: 0.9rem;
+            color: #005371;
+            outline: none;
+            width: 100%;
+            cursor: pointer;
+        }
 
         .cart-btn:hover {
             transform: scale(1.05);
         }
 
-/* --- NEW: Styling for the Name Input Box --- */
-.input-group {
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-weight: bold;
-}
+        /* Styling for the Name Input Box */
+        .input-group {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-weight: bold;
+        }
 
-.input-group input {
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid #eee;
-    font-size: 1rem;
-    outline: none;
-    font-family: inherit;
-}
+        .input-group input {
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid #eee;
+            font-size: 1rem;
+            outline: none;
+            font-family: inherit;
+        }
 
-.input-group input:focus {
-    border-color: var(--secondary-color); /* Turns the border yellow when clicked */
-}
+        .input-group input:focus {
+            border-color: var(--secondary-color);
+        }
+
         /* The Bump Animation */
         @keyframes bump {
             0% { transform: scale(1); }
@@ -169,7 +172,7 @@
         .products-section h3 {
             font-size: 2rem;
             margin-bottom: 2rem;
-            color: var(--primary-color);
+            color: var(--text-color);
         }
 
         .grid {
@@ -194,23 +197,12 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
-        .card-img {
-            width: 150px;
-            height: 150px;
-            background-color: #eee;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-        }
         .product-image {
-            width: 100%; /* Take up the full width available in the card */
-            max-width: 180px; /* Don't let it get ridiculously huge on big screens */
-            aspect-ratio: 1 / 1; /* Automatically force the height to match the width */
-            object-fit: cover; /* Crop the image neatly inside the circle */
-            border-radius: 50%; /* Keep it a perfect circle */
+            width: 100%; 
+            max-width: 180px; 
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border-radius: 50%; 
             margin-bottom: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
@@ -222,7 +214,7 @@
 
         .card p.price {
             font-size: 1.2rem;
-            color: var(--primary-color);
+            color: #ffffff;
             font-weight: bold;
             margin-bottom: 15px;
         }
@@ -230,7 +222,7 @@
         .add-to-cart {
             background-color: var(--primary-color);
             color: white;
-            border: none;
+            border: 1px solid #ffffff;
             padding: 10px 20px;
             border-radius: 25px;
             cursor: pointer;
@@ -240,7 +232,7 @@
         }
 
         .add-to-cart:hover {
-            background-color: #e55050;
+            background-color: #333333;
         }
 
         /* Cart Modal Styles */
@@ -251,7 +243,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
             z-index: 1000;
             justify-content: center;
             align-items: center;
@@ -268,7 +260,7 @@
             width: 90%;
             max-width: 400px;
             position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .close-btn {
@@ -277,7 +269,7 @@
             right: 20px;
             font-size: 1.5rem;
             cursor: pointer;
-            color: #888;
+            color: #ffffff;
         }
 
         .close-btn:hover {
@@ -286,8 +278,8 @@
 
         .cart-modal h2 {
             margin-bottom: 1.5rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid #eee;
+            color: #ffffff;
+            border-bottom: 2px solid #000;
             padding-bottom: 10px;
         }
 
@@ -305,7 +297,7 @@
             align-items: center;
             margin-bottom: 12px;
             font-size: 1.1rem;
-            border-bottom: 1px dashed #eee;
+            border-bottom: 1px dashed #000;
             padding-bottom: 5px;
         }
 
@@ -332,9 +324,9 @@
         }
 
         .checkout-btn {
-            background-color: var(--secondary-color);
+            background-color: var(--primary-color);
             color: var(--text-color);
-            border: none;
+            border: 1px solid #ffffff;
             padding: 12px;
             width: 100%;
             border-radius: 25px;
@@ -345,12 +337,12 @@
         }
 
         .checkout-btn:hover {
-            background-color: #e5b64e;
+            background-color: #333333;
         }
 
         /* Footer */
         footer {
-            background-color: #2d3436;
+            background-color: var(--primary-color);
             color: white;
             text-align: center;
             padding: 1.5rem;
@@ -362,7 +354,7 @@
 <body>
 
     <header>
-        <h1> EIS FROST</h1>
+        <h1>EIS FROST</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -382,75 +374,73 @@
         <div class="grid">
             
             <div class="card">
-                <img src="https://media.istockphoto.com/id/1071627996/vector/pancakes-with-butter-and-maple-syrup-sweet-on-white-plate.jpg?s=612x612&w=0&k=20&c=dKY-1LxTUAN_VEkTO-hr18UT9HQAtaqjCNOD1DanP8M=" alt="Chocolate" class="product-image">
-                <h4>Fresh Pancakes(plain)(made by team)</h4>
-                <p class="price">40</p>
-                <button class="add-to-cart" onclick="addToCart('Pancakes', 40)">Add to Cart</button>
+                <img src="https://media.istockphoto.com/id/1071627996/vector/pancakes-with-butter-and-maple-syrup-sweet-on-white-plate.jpg?s=612x612&w=0&k=20&c=dKY-1LxTUAN_VEkTO-hr18UT9HQAtaqjCNOD1DanP8M=" alt="Pancakes" class="product-image">
+                <h4>Fresh Pancakes (plain)</h4>
+                <p class="price">40 EGP</p>
+                <button class="add-to-cart" onclick="addToCart('Pancakes (Plain)', 40, null)">Add to Cart</button>
             </div>
-             <div class="card">
-                <img src="https://media.istockphoto.com/id/1071627996/vector/pancakes-with-butter-and-maple-syrup-sweet-on-white-plate.jpg?s=612x612&w=0&k=20&c=dKY-1LxTUAN_VEkTO-hr18UT9HQAtaqjCNOD1DanP8M=" alt="Chocolate" class="product-image">
-                <h4>Fresh Pancakes with choclate or honey(made by team)</h4>
-                <p class="price">50 Egp</p>
-                <button class="add-to-cart" onclick="addToCart('Pancakes',50)">Add to Cart</button>
+            
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1071627996/vector/pancakes-with-butter-and-maple-syrup-sweet-on-white-plate.jpg?s=612x612&w=0&k=20&c=dKY-1LxTUAN_VEkTO-hr18UT9HQAtaqjCNOD1DanP8M=" alt="Pancakes" class="product-image">
+                <h4>Fresh Pancakes w/ Topping</h4>
+                <p class="price">50 EGP</p>
+                <button class="add-to-cart" onclick="addToCart('Pancakes (w/ Topping)', 50, null)">Add to Cart</button>
             </div>
 
             <div class="card">
                 <img src="https://www.galaxychocolate.com/mena/sites/g/files/fnmzdf1881/files/migrate-product-files/ejwkmzw3irnhdihy27ic.png" alt="Chocolate" class="product-image">
-                <h4>Galaxy Choclate(36 grams)</h4>
+                <h4>Galaxy Chocolate (36g)</h4>
                 <p class="price">50 EGP</p>
-                <button class="add-to-cart" onclick="addToCart('Galaxy', 50)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Galaxy', 50, null)">Add to Cart</button>
             </div>
             
             <div class="card">
                 <img src="https://cdn.ralali.id/assets/img/Libraries/CADBURY-DAIRY-MILK-30-GR_FtJ6PsTtHRzEVbJw_1571146369.jpg" alt="Chocolate" class="product-image">
-                <h4>Diary Milk Choclate(30 grams)</h4>
+                <h4>Dairy Milk Chocolate (30g)</h4>
                 <p class="price">45 EGP</p>
-                <button class="add-to-cart" onclick="addToCart('Milkyway', 45)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Dairy Milk', 45, null)">Add to Cart</button>
             </div>
             
             <div class="card">
-                <img src="https://edita.com.eg/wp-content/uploads/2024/11/Freska-Group-550px-06-Nov-24.png" alt="Chocolate" class="product-image">
+                <img src="https://edita.com.eg/wp-content/uploads/2024/11/Freska-Group-550px-06-Nov-24.png" alt="Freska" class="product-image">
                 <h4>Freska Finger</h4>
                 <p class="price">8 EGP</p>
-                <button class="add-to-cart" onclick="addToCart('Freska', 8)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Freska', 8, null)">Add to Cart</button>
             </div>
+
             <div class="card">
-                <img src="https://metro-website-images.s3.eu-west-1.amazonaws.com/products/BV06216.jpg" alt="Chocolate" class="product-image">
-                <h4>Mc Vities biscuit</h4>
+                <img src="https://metro-website-images.s3.eu-west-1.amazonaws.com/products/BV06216.jpg" alt="Biscuit" class="product-image">
+                <h4>McVities Biscuit</h4>
                 <p class="price">16 EGP</p>
-                <button class="add-to-cart" onclick="addToCart('Mc Vities', 16)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('McVities', 16, null)">Add to Cart</button>
             </div>
      
-<div class="card">
-                <img src="https://m.media-amazon.com/images/I/81fPK9p2lQL.jpg" alt="Chocolate" class="product-image">
-                <h4>Ahlawy Bisuits(20)</h4>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/81fPK9p2lQL.jpg" alt="Biscuit" class="product-image">
+                <h4>Ahlawy Biscuits</h4>
                 <p class="price">10 EGP</p>
-                <button class="add-to-cart" onclick="addToCart('Ahlawy', 10)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Ahlawy', 10, null)">Add to Cart</button>
             </div>
+
             <div class="card">
-                <img src="https://talabat.dhmedia.io/image/product-information-management/6891bf9dfd59dc99f9820304.jpg?size=520" alt="Chocolate" class="product-image">
-                <h4>Extra gum(10 pcs)</h4>
+                <img src="https://talabat.dhmedia.io/image/product-information-management/6891bf9dfd59dc99f9820304.jpg?size=520" alt="Gum" class="product-image">
+                <h4>Extra Gum (10 pcs)</h4>
                 <p class="price">25 EGP</p>
-                <button class="add-to-cart" onclick="addToCart('Extra gum', 25)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Extra Gum', 25, null)">Add to Cart</button>
             </div>
+
             <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv5EH6EPYU9p63_Y0K_FwhfEZFgSFevtJyng&s" alt="Chocolate" class="product-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv5EH6EPYU9p63_Y0K_FwhfEZFgSFevtJyng&s" alt="Chips" class="product-image">
                 <h4>Chips</h4>
-  <select id="Chips-flavor" class="flavor-select">
-    <option value="spiced cheese">spiced cheese</option>
-    <option value="salt and vinigear">salt and vinigear</option>
-    <option value="Spicy lemon">Spicy lemon</option>
-<option value="Tomato">Tomato</option>
-
-</select>
-
-<p class="price">EGP 20.00</p>
-
-<button class="add-to-cart" onclick="addToCart('chips', 20.00, 'Chips-flavor')">Add to Cart</button>
+                <select id="Chips-flavor" class="flavor-select">
+                    <option value="Spiced Cheese">Spiced Cheese</option>
+                    <option value="Salt and Vinegar">Salt and Vinegar</option>
+                    <option value="Spicy Lemon">Spicy Lemon</option>
+                    <option value="Tomato">Tomato</option>
+                </select>
+                <p class="price">20 EGP</p>
+                <button class="add-to-cart" onclick="addToCart('Chips', 20, 'Chips-flavor')">Add to Cart</button>
             </div>
-
-
-
 
         </div>
     </section>
@@ -460,9 +450,14 @@
             <span class="close-btn" onclick="toggleCart()">✖</span>
             <h2>Your Cart</h2>
             
-            <ul id="cart-items-list">
-                </ul>
-                <div class="payment-options">
+            <ul id="cart-items-list"></ul>
+            
+            <div class="input-group">
+                <label for="customer-name">Full Name:</label>
+                <input type="text" id="customer-name" placeholder="e.g. John Doe">
+            </div>
+
+            <div class="payment-options">
                 <label for="payment-method">Pay With:</label>
                 <select id="payment-method">
                     <option value="Cash">Cash</option>
@@ -480,25 +475,15 @@
     </div>
 
     <footer id="about">
-        <p>&copy; 2026 Crunch & Munch Snacks. All rights reserved.</p>
+        <p>&copy; 2026 EIS FROST. All rights reserved.</p>
     </footer>
-
-Grab the name from the input box. (.trim() removes accidental spaces)
-const customerName = document.getElementById('customer-name').value.trim();
-
-// Safety Check: If they left it blank, pop up an alert and stop the checkout!
-if (customerName === "") {
-    alert("Please enter your name before checking out!");
-    return;
-}
 
     <script>
         let cartItems = [];
         let cartTotal = 0.00;
 
-       function addToCart(itemName, itemPrice, flavorId) {
+        function addToCart(itemName, itemPrice, flavorId) {
             
-            // This safely checks if a flavorId was given
             if (flavorId) {
                 const flavorDropdown = document.getElementById(flavorId);
                 if (flavorDropdown) {
@@ -518,6 +503,7 @@ if (customerName === "") {
                 }, 300);
             }
         }
+
         function removeFromCart(index) {
             cartTotal -= cartItems[index].price;
             cartItems.splice(index, 1);
@@ -527,71 +513,70 @@ if (customerName === "") {
 
         function updateCartUI() {
             const cartButton = document.getElementById('cart-button');
-            cartButton.innerText = `🛒 Cart (${cartItems.length}) | EGP ${cartTotal.toFixed(2)}`;
+            if(cartButton) {
+                cartButton.innerText = `🛒 Cart (${cartItems.length}) | ${cartTotal.toFixed(2)} EGP`;
+            }
 
             const cartList = document.getElementById('cart-items-list');
-            cartList.innerHTML = ''; 
-
-            cartItems.forEach((item, index) => {
-                const li = document.createElement('li');
-                li.innerHTML = `
-                    <span style="flex-grow: 1;">${item.name}</span> 
-                    <span>EGP ${item.price.toFixed(2)}</span>
-                    <button class="remove-item-btn" onclick="removeFromCart(${index})" title="Remove Item">✖</button>
-                `;
-                cartList.appendChild(li);
-            });
+            if(cartList) {
+                cartList.innerHTML = ''; 
+                cartItems.forEach((item, index) => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <span style="flex-grow: 1;">${item.name}</span> 
+                        <span>${item.price.toFixed(2)} EGP</span>
+                        <button class="remove-item-btn" onclick="removeFromCart(${index})" title="Remove Item">✖</button>
+                    `;
+                    cartList.appendChild(li);
+                });
+            }
 
             const modalTotal = document.getElementById('modal-total-price');
-            modalTotal.innerText = `EGP ${cartTotal.toFixed(2)}`;
+            if(modalTotal) {
+                modalTotal.innerText = `${cartTotal.toFixed(2)} EGP`;
+            }
         }
 
         function toggleCart() {
             const modal = document.getElementById('cart-modal-overlay');
-            modal.classList.toggle('active');
+            if(modal) {
+                modal.classList.toggle('active');
+            }
         }
 
-        // --- NEW: Checkout Function ---
-       // --- UPDATED: Discord Checkout Function ---
         function checkout() {
-            // Check if the cart is empty first
             if (cartItems.length === 0) {
                 alert("Your cart is empty! Add some snacks before checking out.");
                 return; 
             }
 
+            // FIXED: Moved the name grabber back inside the function!
+            const customerNameInput = document.getElementById('customer-name');
+            const customerName = customerNameInput ? customerNameInput.value.trim() : "";
 
-            // PASTE YOUR DISCORD WEBHOOK URL HERE BETWEEN THE QUOTES
+            if (customerName === "") {
+                alert("Please enter your name before checking out!");
+                return;
+            }
+
             const webhookURL = "https://discord.com/api/webhooks/1504882788766322691/GH_4qPl8JucaMMeHXfvxK7Gw9hcOj99RoZ2wUVqhGPOQuevERE51vokJFWxNa4PRQKQf";
-
-<div class="input-group">
-    <label for="customer-name">Full Name:</label>
-    <input type="text" id="customer-name" placeholder="e.g. John Doe">
-</div>
-            
             const selectedPayment = document.getElementById('payment-method').value;
 
-            // Build our receipt text formatted for Discord
             let orderMessage = "🚨 **NEW ORDER RECEIVED!** 🚨\n\n";
-orderMessage += `👤 **Customer:** ${customerName}\n\n`; // <-- This is the new line!
-orderMessage += "**Items Ordered:**\n";
+            orderMessage += `👤 **Customer:** ${customerName}\n\n`;
+            orderMessage += "**Items Ordered:**\n";
             
-            // Add each item to the message
             cartItems.forEach(item => {
-                orderMessage += `- ${item.name}: EGP ${item.price.toFixed(2)}\n`;
+                orderMessage += `- ${item.name}: ${item.price.toFixed(2)} EGP\n`;
             });
             
-            // Add the final total
-            orderMessage += `\n💰 **Total Paid: EGP ${cartTotal.toFixed(2)}**`;
-
+            orderMessage += `\n💰 **Total Paid: ${cartTotal.toFixed(2)} EGP**`;
             orderMessage += `\n💳 **Payment Method:** ${selectedPayment}`;
 
-            // This is the "envelope" we send to Discord
             const payload = {
                 content: orderMessage
             };
 
-            // Send the message using fetch()
             fetch(webhookURL, {
                 method: "POST",
                 headers: {
@@ -600,27 +585,19 @@ orderMessage += "**Items Ordered:**\n";
                 body: JSON.stringify(payload)
             })
             .then(response => {
-                // If the message sent successfully, show an alert to the customer
-             if (selectedPayment === "Cash") {
-                    alert("Success! Your snacks are on the way. Please have EGP " + cartTotal.toFixed(2) + " ready for the driver.");
+                if (selectedPayment === "Cash") {
+                    alert("Success! Your snacks are on the way. Please have " + cartTotal.toFixed(2) + " EGP ready for the driver.");
+                } else if (selectedPayment === "Telda/Instapay") {
+                    alert("Success! To finalize your order, please transfer " + cartTotal.toFixed(2) + " EGP to this number: 01005147669.");
                 }
-                else if (selectedPayment === "Telda/Instapay") {
-                    // Update this number to your real Vodafone Cash number!
-                    alert("Success! To finalize your order, please transfer EGP " + cartTotal.toFixed(2) + " to this number: 01005147669.");
-                }
-        
-                // Empty the cart so they can start over
+                
                 cartItems = [];
                 cartTotal = 0.00;
-
-document.getElementById('customer-name').value = ''; 
-
-
+                if(customerNameInput) customerNameInput.value = ''; 
                 updateCartUI();
                 toggleCart();
             })
             .catch(error => {
-                // If something goes wrong (like bad internet), tell the user
                 console.error("Error sending order:", error);
                 alert("Oops! Something went wrong with your order. Please try again.");
             });
@@ -628,4 +605,3 @@ document.getElementById('customer-name').value = '';
     </script>
 </body>
 </html>
-
