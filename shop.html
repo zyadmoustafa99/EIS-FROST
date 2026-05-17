@@ -108,6 +108,27 @@
             transform: scale(1.05);
         }
 
+/* --- NEW: Styling for the Name Input Box --- */
+.input-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #eee;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+}
+
+.input-group input:focus {
+    border-color: var(--secondary-color); /* Turns the border yellow when clicked */
+}
         /* The Bump Animation */
         @keyframes bump {
             0% { transform: scale(1); }
