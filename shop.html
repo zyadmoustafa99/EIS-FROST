@@ -483,6 +483,15 @@
         <p>&copy; 2026 Crunch & Munch Snacks. All rights reserved.</p>
     </footer>
 
+Grab the name from the input box. (.trim() removes accidental spaces)
+const customerName = document.getElementById('customer-name').value.trim();
+
+// Safety Check: If they left it blank, pop up an alert and stop the checkout!
+if (customerName === "") {
+    alert("Please enter your name before checking out!");
+    return;
+}
+
     <script>
         let cartItems = [];
         let cartTotal = 0.00;
@@ -551,14 +560,6 @@
                 return; 
             }
 
-// Grab the name from the input box. (.trim() removes accidental spaces)
-const customerName = document.getElementById('customer-name').value.trim();
-
-// Safety Check: If they left it blank, pop up an alert and stop the checkout!
-if (customerName === "") {
-    alert("Please enter your name before checking out!");
-    return;
-}
 
             // PASTE YOUR DISCORD WEBHOOK URL HERE BETWEEN THE QUOTES
             const webhookURL = "https://discord.com/api/webhooks/1504882788766322691/GH_4qPl8JucaMMeHXfvxK7Gw9hcOj99RoZ2wUVqhGPOQuevERE51vokJFWxNa4PRQKQf";
